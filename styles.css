@@ -62,3 +62,16 @@ h1 { font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.1; margin: 8px 0 12px; 
   .hero-content { padding: 70px 0 56px; }
   .cards, .timeline { grid-template-columns: 1fr; }
 }
+
+
+.grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.panel { background:#fff; border:1px solid #dbe3f2; border-radius:16px; padding:22px; box-shadow:0 8px 22px rgba(20,30,58,.05); }
+.panel.danger { background:linear-gradient(165deg,#fff,#eef3ff); }
+.panel.success { background:linear-gradient(165deg,#edfffa,#ffffff); }
+.panel.highlight { background:linear-gradient(165deg,#f7f3ff,#ffffff); }
+.cta-strip { text-align:center; }
+.co-hero { background: linear-gradient(125deg, rgba(11,16,40,.9), rgba(106,70,210,.8)); }
+.muted { color:#4b5563; }
+.btn-ghost.dark { color:#1f2937; border-color:#1f2937; }
+
+@media (max-width: 760px) { .grid-2 { grid-template-columns:1fr; } }
